@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        *{
+            color: whitesmoke;
+        }
+        .container{
+            background-color: bisque;
+            max-width: fit-content;  
+            margin-top: 20px;
+            justify-content: center;
+            box-shadow: 10px 10px rgb(237, 235, 235);
+            }
+         .car{
+            padding:1px 15px;
+            /* margin: 5px; */
+            }
+            li{
+                list-style-type: none;
+                margin-right: 20px;
+                padding: 0;
+            
+            }
+             div{
+                background-color: rgb(159, 237, 237);
+            }
+            button{
+                border-radius: 10px;
+                background-color: black;
+                color:white
+            }
+            .button1{
+                border-radius: 50%;
+                width: 30px;
+                height:30px;
+                background-color: red;
+                border-width: 0;
+            margin: 5px;}
+
+            .button2{
+                border-radius: 50%;
+                width: 30px;
+                height:30px;
+                background-color: green;
+                border-width: 0;
+                margin: 5px;}
+
+            .button3{
+                border-radius: 50%;
+                width: 30px;
+                height:30px;
+                background-color: rgb(221, 74, 98);
+                border-width: 0;
+                margin: 5px;}
+    </style>
+    
+</head>
+
+
+<body>
+   <div class="container">
+    <div class="card" style="width: 18rem;">
+
+        <img id="bannerImage" src="./caraudi.jpg" class="card-img-top" alt="...">
+        
+        <div class="card-body">
+            <button class="car"> CAR </button>
+            <br>
+            <br>
+            <h5 class="card-title">Mercedez Benz C300 2022</h5>
+            <ul>
+                <li><img src="./icons8-car-30.png" height="20">&nbsp;Mileage:4000 miles</li>
+                <li><img src="./fuel.png.svg" height="20">Fuel:25mpg</li>
+                <li><img src="./icons8-shield-50.png" height="20">Safety:<img src="./icons8-star-64.png" height="20"><img src="./icons8-star-64.png" height="20" ><img src="./icons8-star-64.png" height="20" ><img src="./icons8-star-64.png" height="20" ><img src="./icons8-star-64.png" height="20" ></li>
+            </ul>
+
+            <ul><li>Pick a color</li></ul>
+            <div>
+                <button class="button button1" id="red"></button>
+                <button class="button button2" id="green"></button>
+                <button class="button button3" id="pink"></button>
+            </div>
+            <br>
+            <button class="btn2" ><img src="./icons8-cart.gif" height="20">&nbsp;Add to Cart </button>
+
+        </div>
+      </div>
+    </div>
+    <script>
+       
+        // let btnred = document.querySelector('#red');
+        // let btngreen = document.querySelector('#green');
+        // let btnpink = document.querySelector('#pink');
+
+        // btnred.addEventListener('click',()=> btnred.style.backgroundColor ='#337ab7')
+        // btngreen.addEventListener('click',()=> btnred.style.backgroundColor ='#c9302c')
+        // btnpink.addEventListener('click',()=> btnred.style.backgroundColor ='#4cae4c')
+    </script>
+    
+</body>
+</html>
